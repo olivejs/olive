@@ -1,0 +1,35 @@
+{
+  "name": "ginger",
+  "version": "0.0.0",
+  "description": "A new scaffolding tool for building modern web apps",
+  "repository": "gingerjs/ginger",
+  "scripts": {
+    "test": "jshint . && NODE_ENV=test mocha test --recursive"
+  },
+  "keywords": [
+    "cli",
+    "front-end",
+    "web",
+    "development",
+    "scaffold",
+    "app",
+    "ginger",
+    "seed",
+    "boilerplate"
+  ],
+  "author": "The Ginger Team",
+  "preferGlobal": true,
+  "bin": {
+    "ginger": "./lib/cli.js"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "^3.1.0",
+    "jshint": "^2.8.0",
+    "mocha": "^2.2.5"
+  },
+  "engines": {
+    "node": ">=0.12.0"
+  },
+  "license": "MIT"
+}
