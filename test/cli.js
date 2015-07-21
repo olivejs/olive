@@ -10,15 +10,15 @@ var cli = path.join(__dirname, '../lib/cli.js');
 
 describe('ginger', function() {
 
-  it('should return with exit code 1 when no command is supplied', function() {
+  it('should return with exit code 101 when no command is supplied', function() {
     var exitCode = spawnSync('node', [cli]).status;
-    var expected = 1;
+    var expected = 101;
     expect(exitCode).to.be.equal(expected);
   });
 
-  it('should return with exit code 2 when an invalid command is supplied', function() {
+  it('should return with exit code 102 when an invalid command is supplied', function() {
     var exitCode = spawnSync('node', [cli, 'invalidcommand']).status;
-    var expected = 2;
+    var expected = 102;
     expect(exitCode).to.be.equal(expected);
   });
 

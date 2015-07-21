@@ -4,7 +4,7 @@
   "description": "A new scaffolding tool for building modern web apps",
   "repository": "gingerjs/ginger",
   "scripts": {
-    "test": "jshint . && NODE_ENV=test mocha test --recursive"
+    "test": "jshint . && NODE_ENV=test mocha --recursive"
   },
   "keywords": [
     "cli",
@@ -24,10 +24,15 @@
   },
   "dependencies": {
     "chalk": "^1.1.0",
-    "commander": "^2.8.1"
+    "commander": "^2.8.1",
+    "extfs": "0.0.7",
+    "q": "^1.4.1"
   },
   "devDependencies": {
     "chai": "^3.1.0",
+    "chai-as-promised": "^5.1.0",
+    "coveralls": "^2.11.3",
+    "istanbul": "^0.3.17",
     "jshint": "^2.8.0",
     "mocha": "^2.2.5"
   },
