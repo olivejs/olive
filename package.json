@@ -1,6 +1,6 @@
 {
   "name": "ginger-cli",
-  "version": "0.0.0",
+  "version": "0.0.3",
   "description": "A new scaffolding tool for building modern web apps",
   "repository": "gingerjs/ginger-cli",
   "scripts": {
