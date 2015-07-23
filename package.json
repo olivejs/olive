@@ -1,8 +1,8 @@
 {
-  "name": "ginger",
+  "name": "ginger-cli",
   "version": "0.0.0",
   "description": "A new scaffolding tool for building modern web apps",
-  "repository": "gingerjs/ginger",
+  "repository": "gingerjs/ginger-cli",
   "scripts": {
     "test": "jshint . && NODE_ENV=test mocha --recursive"
   },

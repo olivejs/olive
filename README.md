@@ -11,7 +11,7 @@
 Install the Ginger CLI globally with:
 
 ```
-npm install -g ginger
+npm install -g ginger-cli
 ```
 
 Ginger allows you to create your own project from a seed:
