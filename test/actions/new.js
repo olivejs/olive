@@ -24,7 +24,7 @@ describe('ginger new', function() {
   });
 
   afterEach(function() {
-    process.chdir(cwd);       // restore original working directory
+    process.chdir(cwd);         // restore original working directory
     fs.removeSync(sandboxDir);  // delete sandbox directory
   });
 
@@ -33,7 +33,7 @@ describe('ginger new', function() {
     var promise;
 
     beforeEach(function() {
-      fs.closeSync(fs.openSync(path.join(sandboxDir, 'empty'), 'w'));  // create an empty file in sandbox directory
+      fs.writeFileSync(path.join(sandboxDir, 'empty'), null); // create an empty file in sandbox directory
       promise = command('whatever');
     });
 

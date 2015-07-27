@@ -1,0 +1,6 @@
+{
+  "paths": {
+    "tmp": ".tmp",
+    "dist": "new-dist"
+  }
+}

@@ -1,6 +1,6 @@
 {
   "name": "ginger-cli",
-  "version": "0.0.3",
+  "version": "0.0.6",
   "description": "A new scaffolding tool for building modern web apps",
   "repository": "gingerjs/ginger-cli",
   "scripts": {
@@ -19,6 +19,7 @@
   ],
   "author": "The Ginger Team",
   "preferGlobal": true,
+  "main": "lib/ginger.js",
   "bin": {
     "ginger": "./lib/cli.js"
   },
@@ -26,6 +27,7 @@
     "chalk": "^1.1.0",
     "commander": "^2.8.1",
     "extfs": "0.0.7",
+    "lodash": "^3.10.0",
     "q": "^1.4.1"
   },
   "devDependencies": {

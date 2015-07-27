@@ -6,7 +6,7 @@ var path = require('path');
 var spawnSync = require('child_process').spawnSync;
 var execFileSync = require('child_process').execFileSync;
 
-var cli = path.join(__dirname, '../lib/cli.js');
+var cli = path.join(__dirname, '..', 'lib', 'cli.js');
 
 describe('ginger', function() {
 
