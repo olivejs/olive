@@ -8,7 +8,7 @@ var execFileSync = require('child_process').execFileSync;
 
 var cli = path.join(__dirname, '..', 'lib', 'cli.js');
 
-describe('ginger', function() {
+describe('olive', function() {
 
   it('should return with exit code 101 when no command is supplied', function() {
     var exitCode = spawnSync('node', [cli]).status;
@@ -35,7 +35,7 @@ describe('ginger', function() {
 
 });
 
-describe('ginger new', function() {
+describe('olive new', function() {
 
   it('should return with exit code 1 when missing seed argument', function() {
     var exitCode = spawnSync('node', [cli, 'new']).status;

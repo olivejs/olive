@@ -1,4 +1,4 @@
-# ginger-cli
+# Olive
 
 [![NPM Version][npm-badge]][npm-url]
 [![Downloads][downloads-badge]][npm-url]
@@ -10,23 +10,23 @@
 
 ## Getting Started
 
-Install the Ginger CLI globally with:
+Install Olive globally with:
 
 ```
-npm install -g ginger-cli
+npm install -g olive
 ```
 
-Ginger allows you to create your own project from a seed:
+Olive allows you to create your own project from a seed:
 
 ```
-ginger new <seed> [project]
+olive new <seed> [project]
 ```
 
-For example, you can create a new Ginger project from the [angular seed][angularseed].
+For example, you can create a new Olive project from the [angular seed][angularseed].
 
 ```
 mkdir myapp && cd myapp
-ginger new angular
+olive new angular
 ```
 
 ## Contribution
@@ -34,15 +34,15 @@ ginger new angular
 See [contributing][contributing] guidelines.
 
 
-[npm-badge]: http://img.shields.io/npm/v/ginger-cli.svg
-[downloads-badge]: http://img.shields.io/npm/dm/ginger-cli.svg
-[npm-url]: https://www.npmjs.com/package/ginger-cli
-[travis-badge]: https://travis-ci.org/gingerjs/ginger-cli.svg?branch=master
-[travis-badge-url]: https://travis-ci.org/gingerjs/ginger-cli
-[coveralls-badge]: https://coveralls.io/repos/gingerjs/ginger-cli/badge.svg?branch=master&service=github
-[coveralls-badge-url]: https://coveralls.io/github/gingerjs/ginger-cli?branch=master
-[david-badge]: https://david-dm.org/gingerjs/ginger-cli.svg
-[david-badge-url]: https://david-dm.org/gingerjs/ginger-cli
+[npm-badge]: http://img.shields.io/npm/v/olive.svg
+[downloads-badge]: http://img.shields.io/npm/dm/olive.svg
+[npm-url]: https://www.npmjs.com/package/olive
+[travis-badge]: https://travis-ci.org/olivejs/olive.svg?branch=master
+[travis-badge-url]: https://travis-ci.org/olivejs/olive
+[coveralls-badge]: https://coveralls.io/repos/olivejs/olive/badge.svg?branch=master&service=github
+[coveralls-badge-url]: https://coveralls.io/github/olivejs/olive?branch=master
+[david-badge]: https://david-dm.org/olivejs/olive.svg
+[david-badge-url]: https://david-dm.org/olivejs/olive
 
 [contributing]: CONTRIBUTING.md
-[angularseed]:  https://github.com/gingerjs/seed-angular
+[angularseed]:  https://github.com/olivejs/seed-angular

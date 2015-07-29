@@ -7,6 +7,6 @@ We would love to see external contributions to this project in the form of feedb
 - Clone this repo and `cd` into it.
 - Run `npm install`.
 - Link it globally using `npm link`.
-- Run `ginger` and you should see the usage guide.
+- Run `olive` and you should see the usage guide.
 
 Enjoy :-)

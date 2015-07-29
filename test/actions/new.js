@@ -9,7 +9,7 @@ var fs = require('extfs');
 var path = require('path');
 var command = require('../../lib/actions/new');
 
-describe('ginger new', function() {
+describe('olive new', function() {
 
   var cwd = process.cwd();
   var sandboxDir = path.join(cwd, '.sandbox');

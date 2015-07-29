@@ -1,8 +1,8 @@
 {
-  "name": "ginger-cli",
-  "version": "0.0.6",
+  "name": "olive",
+  "version": "0.0.7",
   "description": "A new scaffolding tool for building modern web apps",
-  "repository": "gingerjs/ginger-cli",
+  "repository": "olivejs/olive",
   "scripts": {
     "test": "jshint . && NODE_ENV=test mocha --recursive"
   },
@@ -13,15 +13,15 @@
     "development",
     "scaffold",
     "app",
-    "ginger",
+    "olive",
     "seed",
     "boilerplate"
   ],
-  "author": "The Ginger Team",
+  "author": "The Olive Team",
   "preferGlobal": true,
-  "main": "lib/ginger.js",
+  "main": "lib/olive.js",
   "bin": {
-    "ginger": "./lib/cli.js"
+    "olive": "./lib/cli.js"
   },
   "dependencies": {
     "chalk": "^1.1.0",
