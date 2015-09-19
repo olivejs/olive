@@ -15,6 +15,7 @@ describe('require(olive)', function() {
     if (fs.existsSync(sandboxDir)) {
       fs.removeSync(sandboxDir);
     }
+
     fs.mkdirSync(sandboxDir);   // create sandbox directory
     process.chdir(sandboxDir);  // cd into sandbox directory
 
@@ -53,8 +54,28 @@ describe('require(olive)', function() {
       var paths = options.paths;
 
       expect(paths).to.have.a.property('src', 'src');
-      expect(paths).to.have.a.property('tmp', '.tmp');
+      expect(paths).to.have.a.property('tmp', '.tmp/build');
       expect(paths).to.have.a.property('dist', 'new-dist');
+    });
+
+  });
+
+  describe('when NODE_ENV=development', function() {
+
+    var defaultEnv;
+
+    beforeEach(function() {
+      defaultEnv = process.env.NODE_ENV;
+      process.env.NODE_ENV = 'development';
+    });
+
+    afterEach(function() {
+      process.env.NODE_ENV = defaultEnv;  // restore original NODE_ENV
+    });
+
+    it('getOptions().paths.tmp changes the value to `.tmp/serve`', function() {
+      var paths = olive.getOptions().paths;
+      expect(paths).to.have.a.property('tmp', '.tmp/serve');
     });
 
   });
